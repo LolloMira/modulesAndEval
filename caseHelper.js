@@ -1,14 +1,15 @@
 function startingUpperCase(string) {
-    return string[0].toUpperCase() + string.substring(1);
+    return string[0].toUpperCase() + string.substring(1); 
 }
 
-// lastVariableInArray => last variable in array
 
-function splitCamelCase(string) {
+/// lastVariableInArray => last variable in array
+
+function splitCamelCase(string){
     let output = ""
     for (const char of string) {
         if (char === char.toUpperCase()) {
-            output += (" " + char.toLowerCase());
+            output += (" " + char.toLowerCase())
         } else {
             output += char;
         }
@@ -17,4 +18,4 @@ function splitCamelCase(string) {
 }
 
 
-module.exports = {startingUpperCase, splitCamelCase};
+module.exports = {startingUpperCase, splitCamelCase}
